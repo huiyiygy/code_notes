@@ -6,6 +6,10 @@
 *.user
 *.sln.docstates
 
+# huiyiygy
+/Test_Interview/
+*/[Dd]ebug/
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
