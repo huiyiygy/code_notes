@@ -1,12 +1,12 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 /**
-Ï£¶ûÅÅĞò
+å¸Œå°”æ’åº
 */
 using namespace std;
 
 void ShellSort(vector<int> &arr){
-	//¼ÆËãÔöÁ¿ĞòÁĞ£º1£¬4£¬13£¬40, 121...
+	//è®¡ç®—å¢é‡åºåˆ—ï¼š1ï¼Œ4ï¼Œ13ï¼Œ40, 121...
 	int n = arr.size();
 	int h = 1;
 	while (h < n / 3 - 1){
@@ -15,7 +15,7 @@ void ShellSort(vector<int> &arr){
 	while (h >= 1){
 		// h-sort the array
 		for (int i = h; i < n; ++i){
-			//¶Ôarr[i], arr[i-h], arr[i-2h]...Ê¹ÓÃ²åÈëÅÅĞò
+			//å¯¹arr[i], arr[i-h], arr[i-2h]...ä½¿ç”¨æ’å…¥æ’åº
 			int inserted = arr[i];
 			int j;
 			for (j = i; j >= h && inserted < arr[j - h]; j-=h){
@@ -24,7 +24,7 @@ void ShellSort(vector<int> &arr){
 			arr[j] = inserted;
 		}
 		h /= 3;
-		//Ã¿´ÎÔöÁ¿²åÈëÅÅĞòºó²é¿´½á¹û
+		//æ¯æ¬¡å¢é‡æ’å…¥æ’åºåæŸ¥çœ‹ç»“æœ
 		cout << "-----------------------" << endl;
 		for (int k = 0; k < n; ++k){
 			cout << arr[k] << "  ";
@@ -34,7 +34,7 @@ void ShellSort(vector<int> &arr){
 }
 
 int main(){
-	vector<int> nums = { 5, 8, 9, 26497, 4, 5, 6, 8, 741, 3, 4968, 4, 9, 76, 43, 1, 86, 2149, 7, 6, 789, 45, 13, 789, 15, 46, 26497, 46578, 4968, 684897 };
+	vector<int> nums = { 5, 8, 9, 26497, 4, 5, 6, 8, 741, 3, 4968, 4, 9, 76, 43, 1, 86, 2149, 7, 6, 46578, 4968, 684897 };
 	ShellSort(nums);
 	system("pause");
 	return 0;
