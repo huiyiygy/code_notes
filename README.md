@@ -5,5 +5,6 @@
 - LeetCode
 - Code_Interview 剑指Offer
 - Machine_Learning
+- others 零碎知识点、常见笔试编程题
 
 语言：C++
