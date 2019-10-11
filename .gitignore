@@ -8,10 +8,11 @@
 
 # huiyiygy
 /Test_Interview/
-*/[Dd]ebug/
+*/Debug/
 *.vcxproj
 *.filters
 *.sln
+/.idea/
 
 # Build results
 [Dd]ebug/
