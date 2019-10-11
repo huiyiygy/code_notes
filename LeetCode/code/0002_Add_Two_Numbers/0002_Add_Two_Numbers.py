@@ -16,7 +16,7 @@ def addTwoNumbers(l1: ListNode, l2: ListNode) -> ListNode:
     carry = 0
     while True:
         a = l1.val if l1 else 0
-        b = l2.val if l1 else 0
+        b = l2.val if l2 else 0
         var = a + b + carry
         if var >= 10:
             var = var % 10
