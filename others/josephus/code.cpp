@@ -1,4 +1,12 @@
 ﻿/*
+ * @Author: your name
+ * @Date: 2021-11-28 16:28:27
+ * @LastEditTime: 2021-11-28 20:03:20
+ * @LastEditors: your name
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \code_notes\others\josephus\code.cpp
+ */
+/*
 约瑟夫环
 方法1：链表解法
 方法2：递归解法
@@ -54,12 +62,12 @@ int josephus(int person_num, int k, int n){
 
 int main() {
 	int person_num = 10000, k = 4, n = 100;
-	cout << "递归解法" << endl;
+	cout << "josephus_recursion" << endl;
 	for (int i = 1; i <= n; i++){
 		cout << josephus_recursion(person_num, k, i) << "  ";
 	}
 	cout << " " << endl;
-	cout << "递推解法" << endl;
+	cout << "josephus" << endl;
 	for (int i = 1; i <= n; i++){
 		cout << josephus(person_num, k, i) << "  ";
 	}
