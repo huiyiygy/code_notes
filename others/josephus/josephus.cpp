@@ -1,17 +1,12 @@
 ﻿/*
- * @Author: your name
+ * @Author: huiyiygy
  * @Date: 2021-11-28 16:28:27
- * @LastEditTime: 2021-11-28 20:03:20
- * @LastEditors: your name
- * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- * @FilePath: \code_notes\others\josephus\code.cpp
+ * @LastEditTime: 2022-02-05 19:08:34
+ * @Description: 约瑟夫环
+ * 方法1：链表解法
+ * 方法2：递归解法
+ * 方法3（最优）：将递归改为递推
  */
-/*
-约瑟夫环
-方法1：链表解法
-方法2：递归解法
-方法3（最优）：将递归改为递推
-*/
 
 #include<iostream>
 #include<vector>
@@ -29,14 +24,16 @@ struct node{
 };
 
 
-/*
-方法2：递归解法
-该函数每次可以求出第n次扔海里的人的编号, 编号范围：0 ~ (n-1)
-person_num：总人数
-k:每次最大报道的数
-n:第n次，剩余需要被扔的人数
-当person_num,n太大时，可能存在栈溢出，导致程序无法运行
-*/
+/**
+ * @description: 
+ * 方法2：递归解法
+ * 该函数每次可以求出第n次扔海里的人的编号, 编号范围：0 ~ (n-1)
+ * 当person_num,n太大时，可能存在栈溢出，导致程序无法运行
+ * @param {int} person_num 总人数
+ * @param {int} k 每次最大报道的数
+ * @param {int} n 剩余需要被扔的人数
+ * @return {*}
+ */
 int josephus_recursion(int person_num, int k, int n){
 	if (n == 1){
 		return (person_num + k - 1) % person_num;
@@ -46,9 +43,14 @@ int josephus_recursion(int person_num, int k, int n){
 	}
 }
 
-/*
-方法3：将递归改为递推
-*/
+/**
+ * @description: 
+ * 方法3：将递归改为递推
+ * @param {int} person_num 总人数
+ * @param {int} k 每次最大报道的数
+ * @param {int} n 剩余需要被扔的人数
+ * @return {*}
+ */
 int josephus(int person_num, int k, int n){
 	if (n == 1){
 		return (person_num + k - 1) % person_num;
@@ -61,7 +63,7 @@ int josephus(int person_num, int k, int n){
 }
 
 int main() {
-	int person_num = 10000, k = 4, n = 100;
+	int person_num = 100, k = 4, n = 50;
 	cout << "josephus_recursion" << endl;
 	for (int i = 1; i <= n; i++){
 		cout << josephus_recursion(person_num, k, i) << "  ";
