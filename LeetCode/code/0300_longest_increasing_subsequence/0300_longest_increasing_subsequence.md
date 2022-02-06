@@ -31,3 +31,8 @@ https://leetcode-cn.com/problems/longest-increasing-subsequence/
 # 进阶：
 * 你可以设计时间复杂度为 O(n^2) 的解决方案吗？
 * 你能将算法的时间复杂度降低到 O(nlog(n)) 吗?
+
+# 扩展题
+* Leetcode 354 俄罗斯套娃信封问题     二维数组
+* 程序员面试金典（第6版）08.13 堆箱子  三维数组
+* Leetcode 673 最长递增子序列的个数
