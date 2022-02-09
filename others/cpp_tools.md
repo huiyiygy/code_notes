@@ -17,8 +17,8 @@ string s = "abc";
 int n = s.size(); // size()和length()实现相同
 int n = s.length();
 
-// 复制(深复制)，修改s中某个字符，不会影响s1
-string s = s1;
+// 复制
+string s = s1; // 深复制，修改s中某个字符，不会影响s1
 
 // 拼接
 string s = s1 + s2;
@@ -39,6 +39,9 @@ int pos = s.rfind(s1, 2, 2); //从s中倒数第2个字符 开始逆向查找 s1�
 string s1 = s.substr(pos, n);  //截取s中从pos开始（包括0）的n个字符的子串，并返回
 
 string s1 = s.substr(pos);     //截取s中从从pos开始（包括0）到末尾的所有字符的子串，并返回
+
+// 拆分 将 A 字符串，根据 B 拆分为多个子串
+vector<string> result = spilt(A, B); // spilt()函数 实现见./String/001_spilt.cpp
 
 // 替换
 s.replace(pos, n, s1);    // 用s1替换s中从pos开始（包括0）的n个字符的子串
