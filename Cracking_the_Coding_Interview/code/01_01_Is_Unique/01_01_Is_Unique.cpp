@@ -2,7 +2,7 @@
  * @Author: huiyiygy
  * @Date: 2022-02-06 19:22:49
  * @LastEditors: huiyiygy
- * @LastEditTime: 2022-02-06 21:24:26
+ * @LastEditTime: 2022-02-11 22:31:14
  * @Description: 判定字符是否唯一
  */
 #include <algorithm>
@@ -121,7 +121,7 @@ public:
 
     /**
      * @description:
-     * 解法四：适用内置排序库函数
+     * 解法四：使用内置排序库函数
      * @param {string} astr
      * 时间复杂度O(nlog(n))，空间复杂度O(n)
      * Runtime: 0 ms, faster than 100.00%

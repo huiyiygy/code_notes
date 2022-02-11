@@ -2,7 +2,7 @@
  * @Author: huiyiygy
  * @Date: 2022-02-09 16:42:50
  * @LastEditors: huiyiygy
- * @LastEditTime: 2022-02-09 18:05:35
+ * @LastEditTime: 2022-02-11 23:38:01
  * @Description: 字符串拆分，手动实现string 的spilt()，当做后续的工具函数
  */
 #include <iostream>
@@ -20,7 +20,7 @@ using namespace std;
  * @param {string} target_str 切分依据
  * @return {*}
  */
-vector<string> spilt(string str, string target_str)
+vector<string> str_spilt(string str, string target_str)
 {
     vector<string> sub_str;
 	size_t str_length = str.size(), target_len = target_str.size();
@@ -50,7 +50,7 @@ vector<string> spilt(string str, string target_str)
 
 int main() {
     string A = "1, 2, 3, 4, 5", B = ", "; // result = {"1", "2", "3", "4", "5"}
-    vector<string> result = spilt(A, B);
+    vector<string> result = str_spilt(A, B);
     for (auto str : result)
     {
         cout << str << endl;
