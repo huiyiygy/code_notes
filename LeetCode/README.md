@@ -18,7 +18,7 @@
 |      |        |                          |                                                |                                |                                          |
 | 0136 | Easy   | 只出现一次的数字         | Single Number                                  | 异或运算符                     |                                          |
 |      |        |                          |                                                |                                |                                          |
-| 0179 | Medium | 最大数                   | Largest Number                                 | 字符串大小比较                 |                                          |
+| 0179 | Medium | 最大数                   | Largest Number                                 | 字符串大小比较，字符串拼接     |                                          |
 |      |        |                          |                                                |                                |                                          |
 | 0238 | Medium | 除自身以外数组的乘积     | Product of Array Except Self                   |                                |                                          |
 |      |        |                          |                                                |                                |                                          |

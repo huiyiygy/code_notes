@@ -2,10 +2,10 @@
  * @Author: huiyiygy
  * @Date: 2022-02-06 18:32:39
  * @LastEditors: huiyiygy
- * @LastEditTime: 2022-02-08 23:28:04
+ * @LastEditTime: 2022-02-12 15:02:08
  * @Description: 
  * 题目
- * 有只包含小写字母的两个字符串A，B。每次移动B中任意一个字符到最后一位，若能使两字符串相等A=B，输出最少需要移动的次数。若不能，输出-1。
+ * 只包含小写字母的两个字符串A，B。每次移动B中任意一个字符到最后一位，经过若干次移动后，若能使两字符串相等A=B，则输出B最少需要移动的次数。若不能，输出-1。
  * 
  * 如：A = "ckad", B = "acdk" 至少需要移动 2 次B中的字符
  * 
@@ -19,6 +19,13 @@
 
 using namespace std;
 
+/**
+ * @description: 
+ * 时间复杂度O(nlog(n)mlog(m))，空间复杂度O(1)，m,n分别表示两个字符串长度
+ * @param {string} a
+ * @param {string} b
+ * @return {*}
+ */
 int moveCount(string a, string b)
 {
     if(a == b) return 0;
