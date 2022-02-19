@@ -5,7 +5,28 @@
 ## C++输出、输出
 
 ```cpp
+// 单行读取一个数据  使用cin时， >> 会过滤掉不可见字符（如 空格 回车，TAB 等） 
+int n;
+cin >> n;
 
+// 单行读取多个数据
+int n; 
+string m;
+cin >> n >> m;
+
+// 读取字符
+char c = cin.get() // cin.get()可以用来接收字符
+
+char c[20];
+cin.get(c, 20); // cin.get(字符数组名,接收字符数目)用来接收一行字符串,可以接收空格，输入字符数少于输出时，补1个'\0'
+
+// 读取定长 字符串, cin.getline() 属于istream流
+char m[20]; 
+cin.getline(m,5); // 接受5个字符，可以接收空格，输入字符数少于输出时，补1个'\0'
+
+// 读取一行字符串 getline 属于 string流
+string str;
+getline(cin, str);     // 接受一个字符串，可以接收空格并输出，需包含“#include<string>”
 ```
 
 ## string常用库函数
